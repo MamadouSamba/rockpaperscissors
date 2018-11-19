@@ -4,10 +4,30 @@
 
 //GLOBAL VARIABLES
 /* global $ */
-$("#shoot").click(function(){
-    $("#userChoice").text($("#input").val())
-});
+var userChoice;
+userChoice="";
+var computerChoice;
+computerChoice="";
+var winner;
+winner="";
+var randomNumber;
 
+randomNumber=0;
+$("#shoot").click(function(){
+    userChoice=$("#input").val();
+    $("#userChoice").text(userChoice);
+    randomNumber=Math.random();
+    if (randomNumber<.3333333333333333333333){
+        computerChoice="Rock";
+    }
+    else if(randomNumber < .6666666666667){
+        computerChoice="Scissors";
+    }
+    else{
+        computerChoice="Paper";
+    }
+    computerChoice
+});
 
 // DOCUMENT READY FUNCTION BELOW
 
