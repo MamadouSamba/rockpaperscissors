@@ -28,6 +28,13 @@ $("#shoot").click(function(){
     }
     computerChoice
 });
+    computerChoice=$("#input").val();
+    $("#computerChoice").text(computerChoice)
+var userInput=$("#userChoice").val();
+var computerInput=$("#computerChoice").val();
+
+var computerWinner=(computerChoice=== computerInput);
+var 
 
 // DOCUMENT READY FUNCTION BELOW
 
